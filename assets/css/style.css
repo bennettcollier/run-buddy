@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.page-title {
+    display: inline-block;
+    border-bottom: 4px, solid, color: #fce138;
+    padding: 0 80px 15px 80px;
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+}
+
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
@@ -69,13 +78,24 @@ section {
     padding: 60px;
 }
 
-/*Hero Style Start */
+/* homepage hero */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    color: #fce138;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #fce138;
 }
 /* Hero Style End */
 
@@ -165,11 +185,11 @@ section {
 
 .section-title {
     font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
     display: inline-block;
+    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #024e76;
 }
 
 .primary-border {
@@ -226,3 +246,45 @@ section {
 .text-right {
     text-align: right;
 }
+
+/* REACH OUT STYLES CHART */
+.contact {
+    text-align: center;
+    background: #024e76;
+}
+
+.contact h2 {
+    color: #fce138;
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+}
+
+.contact-info div {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: #fce138;
+}
+
+/* REACH OUT STYLES END */
