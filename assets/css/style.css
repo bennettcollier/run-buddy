@@ -249,11 +249,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #024e76;
 }
 
 .trainer {
-    margin: 20px;
-    background: #024e76;
+    margin: 10px;
     color: #fce138;
     flex: 1;
 }
