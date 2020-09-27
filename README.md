@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # Run Buddy Inc.
-=======
 # run-buddy
->>>>>>> master
+
+# Run Buddy Inc.
 
 ## Purpose
 A website that offers training services.
@@ -14,9 +13,9 @@ A website that offers training services.
 ## Website
 https://lernantino.github.io/run-buddy/
 
-<<<<<<< HEAD
 ### ©️2019 Run Buddy, Inc 
-=======
+
 ## Contribution
 Made with ❤️ by Bennett Collier
->>>>>>> master
+
+### ©️2019 Run Buddy, Inc 
