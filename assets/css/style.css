@@ -358,10 +358,6 @@ section {
     background-color: #024e76;
 }
 
-.trainer img {
-    width: 100%;
-}
-
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
@@ -369,16 +365,99 @@ section {
 
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
     font-size: 17px;
+}
+
+.trainer-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: (rgba(252, 225, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1 1s;
+} */
+
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+}
+
+.trainer-img h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    /*transition: 0.6s;*/
+    top: 200px;
+    overflow: auto;
+    position: relative;
+    z-index: 9999;
+    transition: .6s;
+}
+
+.trainer-img h4 {
+    font-size: 22px;
+    font-weight: lighter;
+    /*transition: 0.6s;*/
+    top: 200px;
+    overflow: auto;
+    /*transition-delay: 250ms;*/
+    position: relative;
+    z-index: 9999;
+    transition: .6s;
+    transition-delay: 200ms;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    background-image: linear-gradient(to bottom, rgba(252, 225, 56, 0.3), #024e76);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.trainer:hover .trainer-img::after {
+    background-image: linear-gradient(to bottom, rgba(252, 225, 56, 0.3), #024e76);
+    opacity: 1;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
 }
 
 /* REACH OUT STYLES CHART */
@@ -622,6 +701,26 @@ section {
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1;
+    }
+
+    /*.trainer-img {
+        display: none;
+    }*/
+
+    .trainer-img::after {
+        display: none;
+    }
+
+    .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+        display: none;
+    }
+
+    .trainer-bio h3 {
+        display: block;
+    }
+
+    .trainer-bio h4 {
+        display: block;
     }
 
 }
